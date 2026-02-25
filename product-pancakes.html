@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteorite Pancakes | Nebula</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 120px 5% 50px;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .product-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 16px;
+            border: 1px solid var(--neon-cyan);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+        }
+        .product-details {
+            max-width: 500px;
+            padding: 40px;
+        }
+        .product-details h1 {
+            font-size: 3rem;
+            color: var(--neon-cyan);
+            margin-bottom: 20px;
+        }
+        .product-details p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .price {
+            font-size: 2rem;
+            color: var(--neon-purple);
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 30px;
+            display: block;
+        }
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            border: none;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+            margin-top: 10px;
+        }
+        .whatsapp-btn:hover {
+            background: #1ebe5d;
+            box-shadow: 0 0 25px rgba(37, 211, 102, 0.8);
+            color: white;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #a0a0a0;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+        }
+        .back-link:hover {
+            color: var(--neon-cyan);
+            border-bottom: 1px solid var(--neon-cyan);
+        }
+    </style>
+</head>
+<body>
+    <div id="stars-container"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">NEBULA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Return to Base</a></li>
+        </ul>
+    </nav>
+
+    <div class="product-container">
+        <div class="product-image floating">
+            <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Meteorite Pancakes">
+        </div>
+        <div class="product-details glass-panel">
+            <h1>Meteorite Pancakes</h1>
+            <span class="price">£12.50</span>
+            <p>Fluffy stacks infused with dark matter chocolate chips, drizzled generously with our signature glowing stardust syrup. A breakfast truly out of this world.</p>
+            
+            <a href="https://wa.me/447876137354?text=Hello%20Nebula!%20%F0%9F%9A%80%0AI%20would%20like%20to%20order:%0A-%201x%20Meteorite%20Pancakes%20%F0%9F%A5%9E%0A%0APlease%20let%20me%20know%20the%20total%20and%20delivery%20time." 
+               target="_blank" 
+               class="btn-glow whatsapp-btn">
+               Order via WhatsApp
+            </a>
+            <br>
+            <a href="index.html" class="back-link">← Back to Menu</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
